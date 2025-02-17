@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="h-[2000px] pl-[250px] pt-30 bg-black">
-    <header class="fixed top-0 left-0 right-0 h-15 bg-amber-100 z-10">
+    <header class="fixed top-0 left-0 right-0 h-15 bg-slate-600 z-10">
+      <nav class="w-full h-full flex items-center justify-between">
+        <div class="h-full w-fit relative flex items-center">
+          <div
+            class="mx-4 hover:bg-slate-500/50 cursor-pointer rounded-full h-10 w-10 transition-colors duration-150 flex items-center justify-center"
+          >
+            <img src="assets/icons/hamburger.png" alt="" class="h-7 w-6 -translate-y-[1px]" />
+          </div>
+          <a href="https://youtube.com">
+            <img src="assets/icons/youtube.png" alt="" class="h-8 w-8 inline -translate-y-[3px]" />
+            <p class="text-2xl inline font-semibold font-mono text-white">YouTube</p>
+          </a>
+          <div class="absolute top-[6px] -right-[14px]">
+            <p class="font-light text-white text-[11px]">IN</p>
+          </div>
+        </div>
+        <div>Search</div>
+        <div>Create</div>
+      </nav>
       <nav class="fixed top-15 right-0 w-5/6 h-12 bg-black z-10 flex items-center">
         <div
           class="h-8 bg-slate-50 hover:cursor-pointer rounded-lg px-4 flex items-center justify-center ml-4"
