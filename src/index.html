@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="h-[2000px] pl-[250px] pt-30 bg-black">
-    <header class="fixed top-0 left-0 right-0 h-15 bg-slate-600 z-10">
+    <header class="fixed top-0 left-0 right-0 h-15 bg-slate-950 z-10">
       <nav class="w-full h-full flex items-center justify-between">
         <div class="h-full w-fit relative flex items-center">
           <div
-            class="mx-4 hover:bg-slate-500/50 cursor-pointer rounded-full h-10 w-10 transition-colors duration-150 flex items-center justify-center"
+            class="mx-4 hover:bg-slate-600/50 cursor-pointer rounded-full h-10 w-10 transition-colors duration-150 flex items-center justify-center"
           >
             <img src="assets/icons/hamburger.png" alt="" class="h-7 w-6 -translate-y-[1px]" />
           </div>
@@ -23,8 +23,26 @@
             <p class="font-light text-white text-[11px]">IN</p>
           </div>
         </div>
-        <div>Search</div>
-        <div>Create</div>
+        <div class="flex items-center">
+          <div class="w-fit flex items-center">
+            <input
+              type="text"
+              placeholder="Search"
+              class="h-10 w-150 border border-slate-700/50 text-white px-5 font-semibold rounded-l-full placeholder:text-gray-500/80"
+            />
+            <div
+              class="h-[42px] bg-gray-800/50 flex items-center justify-center px-5 rounded-r-full cursor-pointer"
+            >
+              <img src="assets/icons/loupe.png" alt="" class="h-5 w-5" />
+            </div>
+          </div>
+          <div
+            class="h-10 w-10 rounded-full bg-gray-800/50 mx-4 cursor-pointer hover:bg-slate-700/50 flex items-center justify-center transition-colors duration-150"
+          >
+            <img src="assets/icons/mic.png" alt="" class="h-5 w-4" />
+          </div>
+        </div>
+        <div class="text-white">Create</div>
       </nav>
       <nav class="fixed top-15 right-0 w-5/6 h-12 bg-black z-10 flex items-center">
         <div
@@ -33,57 +51,57 @@
           <p class="text-slate-800 text-[16px] font-semibold">All</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Music</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Gaming</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Marvel Rivals</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Valorant</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Battlefield 1</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Mixes</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Hip Hop</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Football</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Anime</p>
         </div>
         <div
-          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-600 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
+          class="h-8 bg-slate-800 hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 rounded-lg px-4 flex items-center justify-center ml-4"
         >
           <p class="text-slate-100 text-[16px] font-semibold">Elden Ring</p>
         </div>
         <div
-          class="h-10 w-10 rounded-full hover:cursor-pointer hover:bg-slate-700 transition-colors duration-200 ml-10 flex items-center justify-center"
+          class="h-10 w-10 rounded-full hover:cursor-pointer hover:bg-slate-700/80 transition-colors duration-200 ml-10 flex items-center justify-center"
         >
           <img
             src="assets/icons/greater-than-symbol.png"
