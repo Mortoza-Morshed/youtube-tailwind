@@ -18,6 +18,7 @@
     --color-slate-950: oklch(0.129 0.042 264.695);
     --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-800: oklch(0.278 0.033 256.848);
+    --color-stone-700: oklch(0.374 0.01 67.558);
     --color-stone-800: oklch(0.268 0.007 34.298);
     --color-stone-950: oklch(0.147 0.004 49.25);
     --color-black: #000;
@@ -440,6 +441,18 @@
   .ml-10 {
     margin-left: calc(var(--spacing) * 10);
   }
+  .ml-30 {
+    margin-left: calc(var(--spacing) * 30);
+  }
+  .ml-40 {
+    margin-left: calc(var(--spacing) * 40);
+  }
+  .ml-50 {
+    margin-left: calc(var(--spacing) * 50);
+  }
+  .ml-100 {
+    margin-left: calc(var(--spacing) * 100);
+  }
   .ml-\[12px\] {
     margin-left: 12px;
   }
@@ -551,6 +564,9 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -631,6 +647,12 @@
   }
   .w-90 {
     width: calc(var(--spacing) * 90);
+  }
+  .w-130 {
+    width: calc(var(--spacing) * 130);
+  }
+  .w-140 {
+    width: calc(var(--spacing) * 140);
   }
   .w-150 {
     width: calc(var(--spacing) * 150);
@@ -2238,6 +2260,48 @@
     &:hover {
       @media (hover: hover) {
         background-color: color-mix(in oklab, var(--color-slate-700) 80%, transparent);
+      }
+    }
+  }
+  .hover\:bg-stone-700 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-stone-700);
+      }
+    }
+  }
+  .hover\:bg-stone-700\/50 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, var(--color-stone-700) 50%, transparent);
+      }
+    }
+  }
+  .hover\:bg-stone-700\/70 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, var(--color-stone-700) 70%, transparent);
+      }
+    }
+  }
+  .hover\:bg-stone-700\/80 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, var(--color-stone-700) 80%, transparent);
+      }
+    }
+  }
+  .hover\:bg-stone-700\/90 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in oklab, var(--color-stone-700) 90%, transparent);
+      }
+    }
+  }
+  .hover\:bg-stone-800 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-stone-800);
       }
     }
   }

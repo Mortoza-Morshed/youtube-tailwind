@@ -25,12 +25,12 @@
             <p class="font-light text-white text-[11px]">IN</p>
           </div>
         </div>
-        <div class="flex items-center">
+        <div class="flex items-center ml-30">
           <div class="w-fit flex items-center">
             <input
               type="text"
               placeholder="Search"
-              class="h-10 w-150 border border-slate-700/50 text-white px-5 font-semibold rounded-l-full placeholder:text-gray-500/80"
+              class="h-10 w-130 border border-slate-700/50 text-white px-5 font-semibold rounded-l-full placeholder:text-gray-500/80"
             />
             <div
               class="h-[42px] bg-gray-800/50 flex items-center justify-center px-5 rounded-r-full cursor-pointer"
@@ -46,10 +46,10 @@
         </div>
         <div class="flex items-center mr-8">
           <div
-            class="flex bg-slate-800/80 h-10 px-4 items-center rounded-full cursor-pointer hover:bg-slate-700/80 transition-colors duration-150"
+            class="flex bg-slate-800/80 h-9 px-4 items-center rounded-full cursor-pointer hover:bg-slate-700/80 transition-colors duration-150"
           >
             <img src="assets/icons/plus.png" alt="" class="h-4 w-4 mr-3" />
-            <p class="text-white inline font-mono font-semibold">Create</p>
+            <p class="text-white inline font-sans font-semibold tracking-tighter">Create</p>
           </div>
           <div
             class="flex items-center justify-center h-10 w-10 rounded-full hover:bg-slate-700/50 transition-colors duration-150 ml-2"
@@ -130,30 +130,32 @@
             class="invert h-3 w-3 translate-x-0.5"
           />
         </div>
+
+        <!-- Sidebar -->
       </nav>
     </header>
     <nav class="fixed top-15 left-0 h-screen w-1/6 bg-stone-950">
       <div
-        class="h-10 bg-stone-800 text-white rounded-xl ml-[12px] mt-2 w-4/5 flex justify-start items-center"
+        class="h-10 bg-stone-800 text-white rounded-xl ml-[12px] mt-2 w-4/5 flex justify-start items-center hover:bg-stone-700/80 cursor-pointer"
       >
-        <div class="m-4 mr-6 w-8">
+        <div class="m-4 mr-6">
           <img src="assets/icons/home.png" alt="" class="h-5 w-5" />
         </div>
         <div class="text-sm font-semibold font-sans">Home</div>
       </div>
       <div
-        class="h-10 bg-stone-800 text-white rounded-xl ml-[12px] w-4/5 flex justify-start items-center"
+        class="h-10 text-white rounded-xl ml-[12px] w-4/5 flex justify-start items-center hover:bg-stone-800 cursor-pointer"
       >
-        <div class="m-4 mr-6 w-8">
-          <img src="assets/icons/yt-short.png" alt="" class="h-8 w-8 invert -translate-x-[6px]" />
+        <div class="m-4 mr-6">
+          <img src="assets/icons/yt-short.svg" alt="" class="h-5 w-5" />
         </div>
         <div class="text-sm font-semibold font-sans">Shorts</div>
       </div>
       <div
-        class="h-10 bg-stone-800 text-white rounded-xl ml-[12px] w-4/5 flex justify-start items-center"
+        class="h-10 text-white rounded-xl ml-[12px] w-4/5 flex justify-start items-center hover:bg-stone-800 cursor-pointer"
       >
-        <div class="m-4 mr-6 w-8">
-          <img src="assets/icons/yt-short.png" alt="" class="h-8 w-8 invert" />
+        <div class="m-4 mr-6">
+          <img src="assets/icons/subscribe.png" alt="" class="h-5 w-5" />
         </div>
         <div class="text-sm font-semibold font-sans">Subscriptions</div>
       </div>
