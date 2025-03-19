@@ -16,8 +16,12 @@
     --color-slate-700: oklch(0.372 0.044 257.287);
     --color-slate-800: oklch(0.279 0.041 260.031);
     --color-slate-950: oklch(0.129 0.042 264.695);
+    --color-gray-200: oklch(0.928 0.006 264.531);
+    --color-gray-400: oklch(0.707 0.022 261.325);
     --color-gray-500: oklch(0.551 0.027 264.364);
     --color-gray-800: oklch(0.278 0.033 256.848);
+    --color-stone-200: oklch(0.923 0.003 48.717);
+    --color-stone-400: oklch(0.709 0.01 56.259);
     --color-stone-700: oklch(0.374 0.01 67.558);
     --color-stone-800: oklch(0.268 0.007 34.298);
     --color-stone-950: oklch(0.147 0.004 49.25);
@@ -32,7 +36,12 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-light: 300;
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-extrabold: 800;
     --tracking-tighter: -0.05em;
@@ -426,6 +435,9 @@
   .mr-8 {
     margin-right: calc(var(--spacing) * 8);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
@@ -579,6 +591,9 @@
   .h-\[400px\] {
     height: 400px;
   }
+  .h-\[420px\] {
+    height: 420px;
+  }
   .h-\[42px\] {
     height: 42px;
   }
@@ -587,9 +602,6 @@
   }
   .h-\[250px\] {
     height: 250px;
-  }
-  .h-\[420px\] {
-    height: 420px;
   }
   .h-\[500px\] {
     height: 500px;
@@ -638,6 +650,9 @@
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -791,6 +806,14 @@
     --tw-translate-x: calc(var(--spacing) * 0.5);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .translate-x-1 {
+    --tw-translate-x: calc(var(--spacing) * 1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-5 {
+    --tw-translate-x: calc(var(--spacing) * 5);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .translate-y-1 {
     --tw-translate-y: calc(var(--spacing) * 1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -816,6 +839,18 @@
   .translate-z-px {
     --tw-translate-z: 1px;
     translate: var(--tw-translate-x) var(--tw-translate-y) var(--tw-translate-z);
+  }
+  .scale-2 {
+    --tw-scale-x: 2%;
+    --tw-scale-y: 2%;
+    --tw-scale-z: 2%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .scale-200 {
+    --tw-scale-x: 200%;
+    --tw-scale-y: 200%;
+    --tw-scale-z: 200%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .scale-3d {
     scale: var(--tw-scale-x) var(--tw-scale-y) var(--tw-scale-z);
@@ -1648,6 +1683,14 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -1684,6 +1727,10 @@
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -1770,11 +1817,23 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
+  .text-gray-200 {
+    color: var(--color-gray-200);
+  }
+  .text-gray-400 {
+    color: var(--color-gray-400);
+  }
   .text-slate-100 {
     color: var(--color-slate-100);
   }
   .text-slate-800 {
     color: var(--color-slate-800);
+  }
+  .text-stone-200 {
+    color: var(--color-stone-200);
+  }
+  .text-stone-400 {
+    color: var(--color-stone-400);
   }
   .text-white {
     color: var(--color-white);
